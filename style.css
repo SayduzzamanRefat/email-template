@@ -1,0 +1,754 @@
+body{
+    width: 600px;
+    margin: 0 auto;
+  
+}
+/*--header top--*/
+header{
+    margin: 35px 0 0 0;
+    padding: 5px 0px 0px 0px;
+    overflow: hidden;
+}
+/*--header logo--*/
+.brand-logo{
+    display: block;
+    float: left;
+    width:20%;
+}
+.brand-logo img{
+    width:80px;
+    height:auto;
+}
+/*--header top brand intro--*/
+.brand-intro{
+    display: block;
+    float: right;
+    width:80%;
+}
+.brand-intro .subs{
+    float: left;
+    padding-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    color: #222222;
+}
+/*--header top button--*/
+.brand-intro .subs-btn{
+    padding: 8px 20px 8px 20px;
+    border-radius: 50px;
+    background: #ffe807;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.3px;
+    font-variant: small-caps;
+    font-size: 16px;
+    border-color: #ffff00;
+    cursor: pointer;
+}
+.brand-intro .subs-btn:hover .far{
+    transform: scale(1.2);
+}
+.brand-intro .subs-btn:hover{
+    background: #a2c930;
+    border-color: #9acd32;
+    transition: 0.3s;
+}
+.brand-intro button .far{
+    padding-left: 5px;
+    transition: transform .3s;/*--Animation--*/
+    font-size: 18px;
+}
+.subs-btn a{
+    text-decoration: none;
+    color:#644223;
+}
+.subs-btn:hover a{
+    color:#fff;
+}
+/*--header bellow--*/
+.header-bellow{
+    background-image: linear-gradient(to right, #ffff00 0%, #ffe807 51%, #9acd32 100%);
+    width: 480px;
+    height: 25px;
+    border-radius: 50px 0 0 50px;
+    margin-top: 5px;
+    display: inline-block;
+    margin-bottom: 35px;
+}
+.header-bellow h3{
+    margin: 5px 0 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color:#222222;
+    padding-left: 25px;
+}
+.header-bellow .header-contact .triangle{
+    color:#364900;
+    padding-left: 3px;
+}
+.header-bellow .header-contact .phone-num{
+  margin: 5px 0 0 0;
+  color:#282828;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.header-bellow .header-contact .phone-num .phone-icon{
+    color: #364900;
+    font-size: 13px;
+    padding-right: 5px;
+}
+.header-bellow .header-contact .email-add{
+    color:#282828;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 10px;
+}
+.header-bellow .header-contact .email-add .mail{
+    color: #364900;
+    font-size: 13px;
+    padding-right: 5px;
+}
+/*--header bellow end--*/
+/*--header menu--*/
+.header-menu{
+    border-top: 1px solid #7cfc00;
+}
+.header-menu .menu ul{
+    margin: 20px 0 20px 0 ;
+    padding: 5px 0 5px 0;
+}
+.header-menu .menu ul li{
+    text-decoration: none;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0px 20px;
+    color:#121212;
+    cursor: pointer;
+}
+.header-menu .menu ul li:hover{
+    color:#FF8C00;
+    transition: 0.2s;
+}
+.hero{
+   height: 400px;
+   background-image: url("images/lace.png");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-color: #795548;
+}
+.hero-left{
+    float:left;
+    margin: 5px 0px 0px 35px;
+}
+
+.hero-left h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color:#fff;
+    margin: 25px 0px 20px 0px;
+
+}
+.hero-left h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color:#fff;
+    margin: 15px 0;
+}
+.hero-left .hero-btn{
+    padding: 5px 15px 5px 15px;
+    background: #ffe807;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    font-variant: all-small-caps;
+    font-size: 16px;
+    border: 1px solid #ffff00;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-top: 10px;
+}
+.hero-left .hero-btn:hover{
+    background: #a2c930;
+    border: 1px solid rgb(154, 205, 50);
+    color: #fff;
+}
+/*--hot deals, summer deals--*/
+.hot-deals{
+    margin: 30px 0px;
+}
+.hot-heading h2, .summer-heading h2{
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    position: relative;
+    padding:10px 0 10px;
+    text-transform: uppercase;
+} 
+.hot-heading h2::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 8px;
+    width: 180px;
+    height: 14px;
+    transform: skew(30deg) translateX(-50%);
+    background: rgba(174,222,35,1);
+    z-index: -1;
+  }
+.summer-heading h2::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 8px;
+    width: 235px;
+    height: 14px;
+    transform: skew(30deg) translateX(-50%);
+    background: rgba(174,222,35,1);
+    z-index: -1;
+  }
+.hot-deals-gallery, .summer-deals-gallery{
+  margin: 30px 0px;
+}
+.hot-deals-gallery-box, .hot-deals-gallery-box-2,
+.summer-deals-gallery-box, .summer-deals-gallery-box-2{
+    margin: 7px;
+    display: inline-block;
+    width: 180px;
+    height: 210px;
+    border: 1px solid #ffe807;
+    background-image: linear-gradient(to right, #ffff00 0%, #ffe807 51%, #9acd32 100%);
+    box-shadow: 1px 5px 15px 0px #9acd32b5;
+    position: relative;
+    overflow: hidden;
+}
+.hot-deals-gallery-box-2, .summer-deals-gallery-box-2 {
+    margin-top: 15px;
+}
+.hot-deals-gallery-img, .summer-deals-gallery-img{
+      height:180px;
+      width:180px;
+  }
+.hot-deals-gallery-img img, .summer-deals-gallery-img img{
+    width:100%;
+    height: 100%;
+}
+.hot-deals-btn, .summer-deals-btn{
+    align-items: center;
+    border-radius: 0px;
+    border: 0px;
+    padding: 0px 20px 0px 20px;
+    background-image: linear-gradient(to right, #ffff00 0%, #ffe807 51%, #9acd32 100%);
+}
+.hot-deals-gallery button a, .summer-deals-gallery button a{
+    color:#000;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0px 30px 0px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.fa-hotjar{
+    padding-left: 7px;
+    color: #e25822;
+    font-size: 25px;
+}
+.fa-umbrella-beach{
+    padding-left: 7px;
+    color: #819aaa;
+    font-size: 25px;
+}
+.price-tag-bg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: linear-gradient(#ff6347, #ff0000);
+    transform: skewY(-6deg);
+    transform-origin: top left;
+}
+.price-tag{
+    padding: 0px 5px 0px 5px;
+    color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+.price-tag span{
+    text-decoration: line-through;
+    font-size: 14px;
+}
+/*-- summer banner--*/
+.summer-banner{
+    background-image: url("images/summer-sale banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: cover;
+    margin: 40px 0;
+ }
+/*-- off banner--*/
+.off-banner{
+    background: #ffef00;
+    margin: 30px 0px 40px 0px;
+}
+.off-banner .off-heading h3{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 20px 30px 20px 50px;
+    letter-spacing: 1px;
+    color: #181818;
+}
+.off-banner .off-heading h3 span{
+    color: #ff0000;
+    font-size: 22px;
+    font-weight: 800;
+}
+.off-banner .off-heading{
+    display: inline-block;
+    width: 70%;
+    vertical-align: middle;
+}
+.off-banner .off-btn{
+    display: inline-block;
+    width: 25%;
+}
+.off-banner .off-btn .shop-btn{
+    background: #a2c930;
+    padding: 10px 15px 10px 15px;
+    border: 0px;
+    border-radius: 0px;
+}
+.off-banner .off-btn .shop-btn a{
+   color: #121212;
+   text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.off-banner .off-btn .shop-btn:hover{
+    background: #006905;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.off-banner .off-btn .shop-btn:hover a{
+    color: #fff;
+}
+/*--Main footer--*/
+footer.main-footer {
+    border-top: 1px solid #7cfc00;
+    padding-top: 20px;
+}
+.main-footer-bg{
+    background-image: url("images/footer.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px 0 25px 0px;
+}
+.main-footer h4{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #121212;
+    text-transform: capitalize;
+    letter-spacing: 0.2px;
+    font-size: 16px;
+}
+.main-footer .social {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 15px 0px 0px 35px;
+}
+.main-footer .footer-phone{
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 15px 0px 0px 0px;
+}
+.main-footer .footer-mail{
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 15px 10px 0px 0px;
+}
+.main-footer .social-icon .fa-facebook-square{
+    color: #0000ff;
+    font-size: 25px;
+    padding-right: 5px;
+    padding-left: 5px;
+    
+}
+.main-footer .social-icon .fa-instagram-square{
+    color: #ad0098;
+    font-size: 25px;
+    padding-right: 5px;
+}
+.main-footer .social-icon .fa-pinterest-square{
+    color: #b3011c;
+    font-size: 25px;
+    padding-right: 5px;
+}
+.main-footer .social-icon .fa-youtube-square{
+    color:#ff0000;
+    font-size: 25px;
+    padding-right: 5px;
+}
+.main-footer p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    padding-left: 5px;
+    color: #000;
+}
+.main-footer .phone-number .fa-mobile-alt, .fa-phone-alt{
+    padding-right: 5px;
+    font-size: 15px;
+    color: #121212;
+}
+.main-footer .mail-add .fa-envelope-open-text{
+    padding-right: 5px;
+    font-size: 15px;
+    color: #121212;
+}
+.footer-bottom{
+    background: #655d5d;
+    padding: 5px 0px;
+}
+.footer-bottom p{
+    color:#fff;
+    margin: 0;
+    text-align: center;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.3px;
+}
+.footer-bottom a{
+    color:#d9c9c9;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+}
+.footer-bottom a:hover{
+    color:#fff;
+    transition: 0.3s;
+}
+
+
+
+/*--Media Query--*/
+@media screen and (max-width: 599px) {
+    /*--header logo--*/
+.brand-logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.brand-logo img{
+    width:60px;
+    height:auto;
+}
+/*--header top brand intro--*/
+.brand-intro .subs{
+    padding-right: 5px;
+    font-size: 13px;
+    letter-spacing: 0.2px;
+}
+/*--header top button--*/
+.brand-intro{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.brand-intro .subs-btn{
+    padding: 5px 10px 5px 10px;
+    letter-spacing: 0.2px;
+    font-size: 14px;
+}
+.brand-intro .subs-btn:hover .far{
+    transform: scale(1.1);
+}
+.brand-intro button .far{
+    padding-left: 2px;
+    font-size: 16px;
+}
+/*--header bellow--*/
+body{
+    width: 450px;
+}
+.header-bellow{
+    width: 380px;
+    float: right;
+    margin-right: 35px;
+}
+.header-bellow h3{
+    font-size: 13px;
+}
+.header-bellow .header-contact .phone-num{
+  font-size: 13px;
+}
+.header-bellow .header-contact .phone-num .phone-icon{
+    font-size: 12px;
+}
+.header-bellow .header-contact .email-add{
+    font-size: 13px;
+}
+.header-bellow .header-contact .email-add .mail{
+    font-size: 12px;
+}
+/*--header bellow end--*/
+/*--header menu--*/
+.header-menu .menu ul li{
+    padding: 0px 5px;
+}
+/*--header menu end--*/
+/*--hero start--*/
+.hero-left h2{
+    font-size: 25px;
+}
+.hero-left h4{
+    font-size: 14px;
+    margin: 10px 0;
+}
+.hero-left .hero-btn{
+    font-size: 14px;
+}
+/*--hero end--*/
+/*--hot deals, summer deals--*/
+.hot-heading h2, .summer-heading h2{
+    font-size: 18px;
+}
+.hot-deals-gallery-box, .hot-deals-gallery-box-2,
+.summer-deals-gallery-box, .summer-deals-gallery-box-2{
+    margin: 10px;
+}
+.hot-deals-gallery button a, .summer-deals-gallery button a{
+    font-size:15px;
+}
+/*--hot deals, summer deals end--*/
+/*-- off banner--*/
+.off-banner .off-heading h3{
+    font-size: 18px;
+    padding: 20px 30px 20px 30px;
+}
+.off-banner .off-heading h3 span{
+    font-size: 20px;
+}
+.off-banner .off-heading{
+    width: 65%;
+}
+.off-banner .off-btn{
+    width: 30%;
+}
+.off-banner .off-btn .shop-btn{
+    padding: 10px 15px 10px 15px;
+}
+.off-banner .off-btn .shop-btn a{
+    font-size: 16px
+}
+/*-- Footer--*/
+.main-footer h4{
+    font-size: 16px;
+}
+.main-footer .social {
+    width: 45%;
+}
+.main-footer .footer-phone{
+    width: 45%;
+}
+.main-footer .footer-mail{
+    width: 45%;
+    padding: 15px;
+    margin-left:15px;
+}
+
+}
+
+@media screen and (max-width: 414px) {
+    /*--header logo--*/
+.brand-logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.brand-logo img{
+    width:45px;
+    height:auto;
+}
+/*--header top brand intro--*/
+.brand-intro .subs{
+    padding-right: 5px;
+    font-size: 12px;
+}
+/*--header top button--*/
+.brand-intro{
+    display: inline-block;
+    text-align: center;
+}
+.brand-intro p{
+    width:100%;
+     margin: 10px 0px 10px 0px;
+}
+.brand-intro .subs-btn{
+    padding: 5px 10px 5px 10px;
+    letter-spacing: 0.2px;
+    font-size: 14px;
+}
+.brand-intro .subs-btn:hover .far{
+    transform: scale(1.1);
+}
+.brand-intro button .far{
+    padding-left: 2px;
+    font-size: 16px;
+}
+/*--header bellow--*/
+body{
+    width: 360px;
+}
+.header-bellow{
+    width: 300px;
+    float: right;
+    margin-right: 25px;
+}
+.header-bellow h3{
+    font-size: 12px;
+    padding-left: 14px;
+}
+.header-bellow .header-contact .phone-num{
+  font-size: 12px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.header-bellow .header-contact .phone-num .phone-icon{
+    font-size: 10px;
+}
+.header-bellow .header-contact .email-add{
+    font-size: 12px;
+    padding-left: 2px;
+}
+.header-bellow .header-contact .email-add .mail{
+    font-size: 10px;
+}
+/*--header bellow end--*/
+/*--header menu--*/
+.header-menu .menu ul{
+    margin: 15px 0 15px 0 ;
+    padding: 5px 0 5px 0;
+}
+.header-menu .menu ul li{
+    font-size: 14px; 
+    padding: 0px 5px;
+}
+/*--header menu end--*/
+/*--hero start--*/
+.hero-left h2{
+    font-size: 20px;
+}
+.hero-left h4{
+    font-size: 12px;
+    margin: 10px 0;
+}
+.hero-left .hero-btn{
+    font-size: 12px;
+}
+/*--hero end--*/
+/*--hot deals, summer deals--*/
+.hot-heading h2, .summer-heading h2{
+    font-size: 16px;
+}
+.hot-deals-gallery, .summer-deals-gallery{
+  margin: 15px 0px;
+}
+.hot-deals-gallery-box, .hot-deals-gallery-box-2,
+.summer-deals-gallery-box, .summer-deals-gallery-box-2{
+    margin: 10px;
+    width: 90%;
+    height: auto;
+}
+.hot-deals-gallery-box-2, .summer-deals-gallery-box-2 {
+    margin-top: 15px;
+}
+.hot-deals-gallery-img, .summer-deals-gallery-img{
+      height:auto;
+      width: 100%;
+}
+.hot-deals-btn, .summer-deals-btn{
+    padding: 5px 91px;
+}
+.hot-deals-gallery button a, .summer-deals-gallery button a{
+    font-size:15px;
+}
+/*--hot deals, summer deals end--*/
+/*-- off banner--*/
+.off-banner .off-heading h3{
+    font-size: 16px;
+    padding: 20px 30px 20px 30px;
+}
+.off-banner .off-heading h3 span{
+    font-size: 18px;
+}
+.off-banner .off-heading{
+    width: 60%;
+}
+.off-banner .off-btn{
+    width: 35%;
+}
+.off-banner .off-btn .shop-btn{
+    padding: 10px 15px 10px 15px;
+}
+.off-banner .off-btn .shop-btn a{
+    font-size: 14px
+}
+/*--Main footer--*/
+.main-footer h4{
+    font-size: 14px;
+}
+.main-footer .social {
+    width: 40%;
+}
+.main-footer .footer-phone{
+    width: 40%;
+}
+.main-footer .footer-mail{
+    width: 40%;
+}
+.main-footer .social-icon .fa-facebook-square{
+    font-size: 20px;
+    
+}
+.main-footer .social-icon .fa-instagram-square{
+    font-size: 20px;
+}
+.main-footer .social-icon .fa-pinterest-square{
+    font-size: 20px;
+}
+.main-footer .social-icon .fa-youtube-square{
+    font-size: 20px;
+}
+.main-footer p{
+    font-size: 12px;
+}
+.main-footer .phone-number .fa-mobile-alt, .fa-phone-alt{
+    font-size: 13px;
+}
+.main-footer .mail-add .fa-envelope-open-text{
+    font-size: 13px;
+}
+.footer-bottom p{
+    font-size: 10px;
+}
+.footer-bottom a{
+    font-size: 11px;
+}
+
+}
